@@ -21,4 +21,5 @@ class Hamming
 	end
 end
 
-Hamming.compute('first', 'worst')
+# Test data!
+# Hamming.compute('first', 'worst')
