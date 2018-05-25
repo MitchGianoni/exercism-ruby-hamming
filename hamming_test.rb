@@ -60,17 +60,17 @@ class HammingTest < Minitest::Test
   end
 
   def test_large_distance
-    skip
+    # skip
     assert_equal 4, Hamming.compute('GATACA', 'GCATAA')
   end
 
   def test_large_distance_in_off_by_one_strand
-    skip
+    # skip
     assert_equal 9, Hamming.compute('GGACGGATTCTG', 'AGGACGGATTCT')
   end
 
   def test_disallow_first_strand_longer
-    skip
+    # skip
     assert_raises(ArgumentError) { Hamming.compute('AATG', 'AAA') }
   end
 
